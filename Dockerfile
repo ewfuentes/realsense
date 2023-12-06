@@ -1,7 +1,7 @@
 FROM osrf/ros:noetic-desktop-full
 
 RUN apt update
-RUN apt install curl
+RUN apt install -y curl
 
 RUN mkdir -p /etc/apt/keyrings && \
     curl -sSf https://librealsense.intel.com/Debian/librealsense.pgp > /etc/apt/keyrings/librealsense.pgp
